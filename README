@@ -1,0 +1,12 @@
+Este es un encritador de texto plano que sobre un archivo de texto (.txt) lo encripta en otro documento (o el mismo si se especifica la linea de enrutado al propio fichero de entrada).
+
+La encriptacion realizada convierte la palabras de simple lectura a codigo ASCII en Hexadecimaly despues permutando las posiciones de los valores dejando a las que tengan en posicion par continuas unas de otras y las impares despues.
+
+Ejm:
+	Hello World --(proceso de encriptado)--> 040606060608050c0c0f 0506070606070f020c04
+
+	Hello --> 0048/0065/006C/006C/006F sacamos las posiciones pares de las impares [0_4_/0_6_/0_6_/0_6_/0_6_][_0_8/_0_5/_0_C/_0_C/_0_F]
+					y a continuacion las juntamos -> 040606060608050c0c0f
+
+	World --> 0057/006F/0072/006C/0064 mismo proceso que antes [0_5/_0_6/_0_7/_0_6/_0_6][_0_7/_0_F/_0_2/_0_C/_0_4]
+					--> 0506070606070f020c04
